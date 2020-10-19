@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--
+- Praktikum DBWT. Autoren:
+- Marc, Schwägerl, 3124416
+- Vorname2, Nachname2, Matrikelnummer2#
+-->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="newsletter">Anmeldung</label> <br>
+
+<form action="/Beispiele/formdata.html" method="post" id="newsletter">
+    Anrede <br>
+    <input type="radio" id="mann" name="anrede" value="male">
+    <label for="mann" > Herr</label> <br>
+    <input type="radio" id="frau" name="anrede" value="female">
+    <label for="frau">Frau</label> <br>
+    <label for="vname">Vorname*</label><br>
+    <input type="text" id="vname" name="vname" required><br>
+    <label for="nname">Nachname*</label><br>
+    <input type="text" id="nname" name="nname" required><br>
+    <label for="email">E-Mail*</label><br>
+    <input type="text" id="email" name="email" required><br>
+    <label for="intervall">Benachrichtigungsintervall</label><br>
+    <select id="intervall" name="benachrichtigungsintervall">
+        <option value="tag">täglich</option>
+        <option value="woche">wöchentlich</option>
+        <option value="monat">monatlich</option>
+    </select><br>
+    <input type="checkbox" id="data" name="datenschutz" required>
+    <label for="data">Datenschutzhinweise gelesen* </label><br>
+    <input type="submit" value="Abschicken"><br>
+    *) Eingaben sind Pflicht
+
+</form>
+
+</body>
+</html>
